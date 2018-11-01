@@ -2,11 +2,18 @@ $(function () {
     // 隐藏滚动条
     $('.home').width(innerWidth);
     // 顶部轮播图
-        new Swiper('#topSwiper', {
+     new Swiper('#topSwiper', {
         pagination: '.swiper-pagination',
-        paginationClickable: true,
-        autoplay: 2500,
-        loop: true,
+        effect: 'cube',
+        grabCursor: true,
+        cube: {
+            shadow: true,
+            slideShadows: true,
+            shadowOffset: 20,
+            shadowScale: 0.94
+        },
+        autoplay:2500,
+        loop:true
     });
         new Swiper('#mustbuySwiper', {
         slidesPerView: 3,
